@@ -13,7 +13,8 @@
 int main(){
   LedState state = 0;
   for(int i = 0; i < 5; ++i){
-    print_led_state(state);
+    printf("STEP %d: LED is now %s\n",i,led_state_to_string(state));
+    if(state == 2) printf("%*s\n", 26, "LED is blinking...");
     state = next_led_state(state);
   }
 
