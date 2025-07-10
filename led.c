@@ -23,3 +23,14 @@ void print_led_state(LedState state){
   }
   return;
 }
+
+/**
+ * next_led_state
+ * 
+ * @param state : 現在の状態
+ * @param next : 状態遷移後の状態
+ */
+LedState next_led_state(LedState state){
+  LedState next = (state + 1) % 3;
+  return next;
+}

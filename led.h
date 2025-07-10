@@ -8,5 +8,6 @@ typedef enum{
 } LedState;
 
 void print_led_state(LedState state);
+LedState next_led_state(LedState state);
 
 #endif

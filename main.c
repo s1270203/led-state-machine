@@ -11,8 +11,11 @@
  */
 
 int main(){
-  print_led_state(LED_OFF);
-  print_led_state(LED_ON);
-  print_led_state(LED_BLINK);
+  LedState state = 0;
+  for(int i = 0; i < 5; ++i){
+    print_led_state(state);
+    state = next_led_state(state);
+  }
+
   return 0;
 }
