@@ -18,7 +18,7 @@ int main(){
   while(1){
     printf("Current State: %s\n",led_state_to_string(state));
     if(state == LED_BLINK) printf("LED is blinking...\n");
-    printf("Press 'n'=next, 'a'=auto, 's'=stop, 'q'=quit:\n");
+    printf("Press 'n'=next,'q'=quit:\n");
     
     input = getchar();
     while(getchar() != '\n');
